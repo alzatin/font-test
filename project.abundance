@@ -14,106 +14,14 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1740168110786,
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": 1740168274882
-                }
-            ],
+            "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
-        },
-        {
-            "atomType": "Move",
-            "name": "Move",
-            "x": 0.4594594594594595,
-            "y": 0.25076452599388377,
-            "uniqueID": 1740168164546,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": 1740168166117
-                },
-                {
-                    "name": "xDist",
-                    "ioValue": 10
-                },
-                {
-                    "name": "yDist",
-                    "ioValue": -5
-                },
-                {
-                    "name": "zDist",
-                    "ioValue": 10
-                }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
-        },
-        {
-            "atomType": "Rotate",
-            "name": "Rotate",
-            "x": 0.30130130130130134,
-            "y": 0.27522935779816515,
-            "uniqueID": 1740168166117,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": 1740168293148
-                },
-                {
-                    "name": "x-axis degrees",
-                    "ioValue": 30
-                },
-                {
-                    "name": "y-axis degrees",
-                    "ioValue": 0
-                },
-                {
-                    "name": "z-axis degrees",
-                    "ioValue": 0
-                }
-            ],
-            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
-        },
-        {
-            "atomType": "Loft",
-            "name": "Loft",
-            "x": 0.5155155155155156,
-            "y": 0.4831804281345566,
-            "uniqueID": 1740168274882,
-            "ioValues": [
-                {
-                    "name": "Shape 2",
-                    "ioValue": 1740168164546
-                },
-                {
-                    "name": "Shape 4",
-                    "ioValue": 1740168166117
-                },
-                {
-                    "name": "Shape 5",
-                    "ioValue": ""
-                },
-                {
-                    "name": "Shape 2",
-                    "ioValue": 1740168164546
-                },
-                {
-                    "name": "Shape 4",
-                    "ioValue": 1740168166117
-                },
-                {
-                    "name": "Shape 5",
-                    "ioValue": ""
-                }
-            ],
-            "description": "Joins two or more shapes into a single solid by filling in the space between them. Also called 'hull'",
-            "closedSelection": 0
         },
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.15515515515515516,
-            "y": 0.5168195718654435,
+            "x": 0.1741741741741742,
+            "y": 0.308868501529052,
             "uniqueID": 1740168293148,
             "ioValues": [
                 {
@@ -128,19 +36,51 @@
             "description": "Creates a new rectangle."
         },
         {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.3833833833833834,
+            "y": 0.4525993883792049,
+            "uniqueID": 1740170573870,
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1740168293148
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": 1740170586752
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.1691691691691692,
+            "y": 0.654434250764526,
+            "uniqueID": 1740170578963,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Creates a new circle."
+        },
+        {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.6176176176176177,
-            "y": 0.6483180428134556,
-            "uniqueID": 1740168402432,
+            "x": 0.2732732732732733,
+            "y": 0.7339449541284403,
+            "uniqueID": 1740170586752,
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": 1740168274882
+                    "ioValue": 1740170578963
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 0
+                    "ioValue": 5
                 },
                 {
                     "name": "yDist",
@@ -148,111 +88,66 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 10
+                    "ioValue": 0
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
         },
         {
-            "atomType": "Assembly",
-            "name": "Assembly",
-            "x": 0.7577577577577577,
-            "y": 0.7003058103975535,
-            "uniqueID": 1740168980033,
-            "ioValues": [
-                {
-                    "name": "Shape 1",
-                    "ioValue": 1740168985454
-                },
-                {
-                    "name": "Shape 2",
-                    "ioValue": 1740168402432
-                }
-            ],
-            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
-        },
-        {
-            "atomType": "Extrude",
-            "name": "Extrude",
-            "x": 0.4834834834834835,
-            "y": 0.8103975535168196,
-            "uniqueID": 1740168985454,
+            "atomType": "Rotate",
+            "name": "Rotate",
+            "x": 0.5295295295295295,
+            "y": 0.29357798165137616,
+            "uniqueID": 1740170636168,
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": 1740168293148
+                    "ioValue": 1740170573870
                 },
                 {
-                    "name": "height",
-                    "ioValue": 10
+                    "name": "x-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "y-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "z-axis degrees",
+                    "ioValue": 0
                 }
             ],
-            "description": "Extrudes a 2D shape. Input can be negitive. "
+            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
         }
     ],
     "allConnectors": [
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape 2",
-            "ap2Primary": false,
-            "ap1ID": 1740168164546,
-            "ap2ID": 1740168274882
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 1740168166117,
-            "ap2ID": 1740168164546
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "Shape 4",
-            "ap2Primary": false,
-            "ap1ID": 1740168166117,
-            "ap2ID": 1740168274882
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap2Primary": false,
-            "ap1ID": 1740168274882,
-            "ap2ID": 1740168110786
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 1740168274882,
-            "ap2ID": 1740168402432
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 1740168293148,
-            "ap2ID": 1740168166117
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 1740168293148,
-            "ap2ID": 1740168985454
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "Shape 2",
-            "ap2Primary": false,
-            "ap1ID": 1740168402432,
-            "ap2ID": 1740168980033
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "Shape 1",
             "ap2Primary": false,
-            "ap1ID": 1740168985454,
-            "ap2ID": 1740168980033
+            "ap1ID": 1740168293148,
+            "ap2ID": 1740170573870
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1740170573870,
+            "ap2ID": 1740170636168
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1740170578963,
+            "ap2ID": 1740170586752
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 2",
+            "ap2Primary": false,
+            "ap1ID": 1740170586752,
+            "ap2ID": 1740170573870
         }
     ],
     "unitsKey": "Inches",
