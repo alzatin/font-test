@@ -77,8 +77,8 @@
         {
             "atomType": "Loft",
             "name": "Loft",
-            "x": 0.6132332878581174,
-            "y": 0.5963302752293578,
+            "x": 0.6026026026026027,
+            "y": 0.5137614678899083,
             "uniqueID": 1740168274882,
             "ioValues": [
                 {
@@ -126,6 +126,32 @@
                 }
             ],
             "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.7517517517517518,
+            "y": 0.7553516819571866,
+            "uniqueID": 1740168402432,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1740168274882
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
         }
     ],
     "allConnectors": [
@@ -149,6 +175,13 @@
             "ap2Primary": false,
             "ap1ID": 1740168274882,
             "ap2ID": 1740168110786
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1740168274882,
+            "ap2ID": 1740168402432
         },
         {
             "ap1Name": "geometry",
