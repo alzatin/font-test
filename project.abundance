@@ -4,7 +4,16 @@
     "x": 0,
     "y": 0,
     "uniqueID": 1740168101253,
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "name1",
+            "ioValue": "\"mynameis\""
+        },
+        {
+            "name": "name2",
+            "ioValue": "\"http://fonts.gstatic.com/s/inder/v5/C38TwecLTfKxIHDc_Adcrw.ttf\""
+        }
+    ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
     "allAtoms": [
@@ -20,13 +29,13 @@
         {
             "atomType": "GitHubMolecule",
             "name": "loadFont",
-            "x": 0.38744884038199184,
-            "y": 0.47094801223241584,
+            "x": 0.4283154121863799,
+            "y": 0.474006116207951,
             "uniqueID": 1741203837433,
             "ioValues": [
                 {
                     "name": "text",
-                    "ioValue": "\"umymm\""
+                    "ioValue": "\"mynameis\""
                 },
                 {
                     "name": "TTF",
@@ -34,7 +43,7 @@
                 },
                 {
                     "name": "text size",
-                    "ioValue": 4
+                    "ioValue": 6
                 }
             ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -46,7 +55,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1741203837613,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1741203837592
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -112,15 +126,15 @@
                     "ioValues": [
                         {
                             "name": "TTF",
-                            "ioValue": 10
+                            "ioValue": "\"http://fonts.gstatic.com/s/inder/v5/C38TwecLTfKxIHDc_Adcrw.ttf\""
                         },
                         {
                             "name": "text",
-                            "ioValue": 10
+                            "ioValue": "\"mynameis\""
                         },
                         {
                             "name": "size",
-                            "ioValue": 10
+                            "ioValue": 6
                         }
                     ],
                     "description": "Defines a Replicad code block.",
@@ -181,29 +195,38 @@
                 "svgURL": "https://raw.githubusercontent.com/alzatin/loadFont/master/project.svg?sanitize=true"
             },
             "unitsKey": "Inches",
-            "fileTypeVersion": 1,
-            "compiledBom": []
+            "fileTypeVersion": 1
         },
         {
-            "atomType": "Extrude",
-            "name": "Extrude",
-            "x": 0.6323328785811733,
-            "y": 0.37920489296636084,
-            "uniqueID": 1741203862403,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": ""
-                },
-                {
-                    "name": "height",
-                    "ioValue": 10
-                }
-            ],
-            "description": "Extrudes a 2D shape. Input can be negitive. "
+            "atomType": "Input",
+            "name": "name1",
+            "x": 0.04,
+            "y": 0.6666666666666666,
+            "uniqueID": 1741204222678,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "string"
+        },
+        {
+            "atomType": "Input",
+            "name": "name2",
+            "x": 0.04,
+            "y": 0.4036697247706422,
+            "uniqueID": 1741204288431,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "string"
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "text",
+            "ap2Primary": false,
+            "ap1ID": 1741204222678,
+            "ap2ID": 1741203837433
+        }
+    ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
     "compiledBom": [],
