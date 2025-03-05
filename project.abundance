@@ -20,8 +20,8 @@
         {
             "atomType": "GitHubMolecule",
             "name": "loadFont",
-            "x": 0.3792633015006821,
-            "y": 0.4770642201834862,
+            "x": 0.38744884038199184,
+            "y": 0.47094801223241584,
             "uniqueID": 1741203837433,
             "ioValues": [
                 {
@@ -192,6 +192,10 @@
             "uniqueID": 1741203862403,
             "ioValues": [
                 {
+                    "name": "geometry",
+                    "ioValue": ""
+                },
+                {
                     "name": "height",
                     "ioValue": 10
                 }
@@ -199,15 +203,7 @@
             "description": "Extrudes a 2D shape. Input can be negitive. "
         }
     ],
-    "allConnectors": [
-        {
-            "ap1Name": "Geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 1741203837433,
-            "ap2ID": 1741203862403
-        }
-    ],
+    "allConnectors": [],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
     "compiledBom": [],
