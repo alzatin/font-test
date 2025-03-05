@@ -18,18 +18,196 @@
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
-            "atomType": "Text",
-            "name": "Text",
-            "x": 0.43258971871968965,
-            "y": 0.5198776758409785,
-            "uniqueID": 1741193195417,
-            "ioValues": [],
-            "description": "Creates a new text sketch.",
-            "fontFamily": "MONSERRAT",
-            "selectedFontIndex": 4
+            "atomType": "GitHubMolecule",
+            "name": "loadFont",
+            "x": 0.3792633015006821,
+            "y": 0.4770642201834862,
+            "uniqueID": 1741203837433,
+            "ioValues": [
+                {
+                    "name": "text",
+                    "ioValue": "\"umymm\""
+                },
+                {
+                    "name": "TTF",
+                    "ioValue": "\"http://fonts.gstatic.com/s/inder/v5/C38TwecLTfKxIHDc_Adcrw.ttf\""
+                },
+                {
+                    "name": "text size",
+                    "ioValue": 4
+                }
+            ],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1741203837613,
+                    "ioValues": [],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "Input",
+                    "name": "text",
+                    "x": 0.04,
+                    "y": 0.8226299694189603,
+                    "uniqueID": 1741203837166,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "string"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "TTF",
+                    "x": 0.04,
+                    "y": 0.4862385321100917,
+                    "uniqueID": 1741203837925,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "string"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "text size",
+                    "x": 0.04,
+                    "y": 0.6880733944954128,
+                    "uniqueID": 1741203837781,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Code",
+                    "name": "Code",
+                    "x": 0.3590361445783133,
+                    "y": 0.2293577981651376,
+                    "uniqueID": 1741203837747,
+                    "ioValues": [
+                        {
+                            "name": "TTF",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "text",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "size",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Defines a Replicad code block.",
+                    "codeVersion": 1,
+                    "code": "//Inputs:[TTF, text, size]; \n\n await replicad.loadFont(\"https://fonts.gstatic.com/s/roboto/v15/W5F8_SL0XFawnjxHGsZjJA.ttf\")\n  \n      console.log(\"font loaded in code\")\n\n   \n      let shape1 = replicad.drawText(\"mom\")\n\n      let shape2 = replicad.drawText(\"mommy\", {fontSize: size, font: \"ROBOTO\"})\n\n      const newPlane = new Plane().pivot(0, 'Y');\n      console.log(shape2)\n\n     return { geometry: [shape2.sketchOnPlane(newPlane).extrude(7)], tags: [],\n        color: '#A3CE5B',\n        plane: newPlane}\n\n"
+                },
+                {
+                    "atomType": "Code",
+                    "name": "Code",
+                    "x": 0.5096385542168674,
+                    "y": 0.5076452599388379,
+                    "uniqueID": 1741203837592,
+                    "ioValues": [
+                        {
+                            "name": "TTF",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "text",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "size",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Defines a Replicad code block.",
+                    "codeVersion": 1,
+                    "code": "//Inputs:[TTF, text, size]; \n\n await replicad.loadFont(TTF)\n  \n      console.log(\"font loaded in code\")\n      let textString = text.toString()\n\n      let shape2 = replicad.drawText(textString, {fontSize: size, font: \"ROBOTO\"})\n\n      const newPlane = new Plane().pivot(0, 'Y');\n      console.log(shape2)\n\n     return { geometry: [shape2.sketchOnPlane(newPlane).extrude(3)], tags: [],\n        color: '#A3CE5B',\n        plane: newPlane}\n\n"
+                }
+            ],
+            "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "text",
+                    "ap2Primary": false,
+                    "ap1ID": 1741203837166,
+                    "ap2ID": 1741203837592
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "TTF",
+                    "ap2Primary": false,
+                    "ap1ID": 1741203837925,
+                    "ap2ID": 1741203837592
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "size",
+                    "ap2Primary": false,
+                    "ap1ID": 1741203837781,
+                    "ap2ID": 1741203837592
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1741203837592,
+                    "ap2ID": 1741203837613
+                }
+            ],
+            "parentRepo": {
+                "privateRepo": false,
+                "repoName": "loadFont",
+                "dateCreated": "2025-03-05T17:46:52Z",
+                "readMe": "https://raw.githubusercontent.com/alzatin/loadFont/master/README.md?sanitize=true",
+                "yyyy": 2025,
+                "topMoleculeID": 1741196812752,
+                "githubMoleculesUsed": [],
+                "html_url": "https://github.com/alzatin/loadFont",
+                "topics": [
+                    "abundance-tool"
+                ],
+                "parentRepo": null,
+                "forks": 0,
+                "dateModified": "739315",
+                "ranking": 0,
+                "searchField": "loadfont alzatin use a ttf string to load a new font and drawtext abundance-tool",
+                "owner": "alzatin",
+                "description": "use a ttf string to load a new font and drawText",
+                "contentURL": "https://raw.githubusercontent.com/alzatin/loadFont/master/project.abundance?sanitize=true",
+                "svgURL": "https://raw.githubusercontent.com/alzatin/loadFont/master/project.svg?sanitize=true"
+            },
+            "unitsKey": "Inches",
+            "fileTypeVersion": 1,
+            "compiledBom": []
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.6323328785811733,
+            "y": 0.37920489296636084,
+            "uniqueID": 1741203862403,
+            "ioValues": [
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1741203837433,
+            "ap2ID": 1741203862403
+        }
+    ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
     "compiledBom": [],
