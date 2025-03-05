@@ -39,7 +39,7 @@
                 },
                 {
                     "name": "TTF",
-                    "ioValue": "\"http://fonts.gstatic.com/s/inder/v5/C38TwecLTfKxIHDc_Adcrw.ttf\""
+                    "ioValue": "\"http://fonts.gstatic.com/s/acme/v5/-J6XNtAHPZBEbsifCdBt-g.ttf\""
                 },
                 {
                     "name": "text size",
@@ -126,7 +126,7 @@
                     "ioValues": [
                         {
                             "name": "TTF",
-                            "ioValue": "\"http://fonts.gstatic.com/s/inder/v5/C38TwecLTfKxIHDc_Adcrw.ttf\""
+                            "ioValue": "\"http://fonts.gstatic.com/s/acme/v5/-J6XNtAHPZBEbsifCdBt-g.ttf\""
                         },
                         {
                             "name": "text",
