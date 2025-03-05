@@ -20,13 +20,13 @@
         {
             "atomType": "Text",
             "name": "Text",
-            "x": 0.4471387002909797,
-            "y": 0.6116207951070336,
+            "x": 0.43258971871968965,
+            "y": 0.5198776758409785,
             "uniqueID": 1741193195417,
             "ioValues": [],
             "description": "Creates a new text sketch.",
-            "fontFamily": "ROBOTO",
-            "selectedFontIndex": 0
+            "fontFamily": "MONSERRAT",
+            "selectedFontIndex": 4
         }
     ],
     "allConnectors": [],
